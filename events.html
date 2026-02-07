@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events | SANKALP RIPPLE 2K26</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="college-logo.png" alt="RGM Logo" class="top-left-logo">
+    <div class="college-title">
+        <div class="college-name">RAJEEV GANDHI MEMORIAL COLLEGE OF ENGINEERING AND TECHNOLOGY</div>
+        <div class="autonomous-text">(AUTONOMOUS)</div>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<section class="events-section">
+    <h1 class="event-title" style="font-size: 4rem;">Technical Events</h1>
+    <div class="banner-glass">
+        <h2 style="color: #00f2fe;">Where the dream takes shape</h2>
+        <small style="color: #ff00ff; letter-spacing: 2px;">CLICK AN EVENT TO VIEW DETAILS & REGISTER</small>
+    </div>
+
+    <div class="events-grid">
+        <div class="event-card" onclick="openEvent('vision-details')">
+            <img src="vision.png" alt="Vision in Words">
+        </div>
+        <div class="event-card" onclick="openEvent('poster-details')">
+            <img src="poster.png" alt="Poster Vista">
+        </div>
+        <div class="event-card" onclick="openEvent('spark-details')">
+            <img src="spark.png" alt="Spark Tank">
+        </div>
+        <div class="event-card" onclick="openEvent('waste-details')">
+            <img src="waste.png" alt="Waste Value">
+        </div>
+        <div class="event-card" onclick="openEvent('draft-details')">
+            <img src="draft.png" alt="Draft Craft">
+        </div>
+        <div class="event-card" onclick="openEvent('mecha-details')">
+            <img src="mecha.png" alt="Mecha Hunt">
+        </div>
+        <div class="event-card" onclick="openEvent('print-details')">
+            <img src="print.png" alt="Print-A-Thon">
+        </div>
+        <div class="event-card" onclick="openEvent('project-details')">
+            <img src="project.png" alt="Project Expo">
+        </div>
+    </div>
+</section>
+
+<div id="vision-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('vision-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="vision.png">
+        <h2 style="color: #00f2fe;">Vision in Words</h2>
+        <p>A premier paper presentation event to showcase your technical research and innovative ideas.</p>
+        <a href="https://forms.gle/1SQdq8k58v1PQMRT9" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<div id="poster-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('poster-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="poster.png">
+        <h2 style="color: #00f2fe;">Poster – Vista</h2>
+        <p>Display your engineering concepts through creative and informative poster designs.</p>
+        <a href="https://forms.gle/V7Jkjh1BadExPQKL6" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<div id="spark-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('spark-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="spark.png">
+        <h2 style="color: #00f2fe;">Spark – Tank</h2>
+        <p>The ultimate platform for pitching mechanical prototypes and innovative business models.</p>
+        <a href="https://forms.gle/TarixJiM3sAKf8b56" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<div id="waste-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('waste-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="waste.png">
+        <h2 style="color: #00f2fe;">Waste – Value</h2>
+        <p>Demonstrate sustainability by creating useful mechanical tools from scrap materials.</p>
+        <a href="https://forms.gle/mzN3pWEhUSpjdmJd7" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<div id="draft-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('draft-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="draft.png">
+        <h2 style="color: #00f2fe;">Draft Craft</h2>
+        <p>Test your precision and speed in technical 2D and 3D CAD modeling challenges.</p>
+        <a href="https://forms.gle/3W1WBLjgSEoLM3nR6" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<div id="mecha-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('mecha-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="mecha.png">
+        <h2 style="color: #00f2fe;">Mecha – Hunt</h2>
+        <p>A thrilling technical treasure hunt based on mechanical workshop tools and knowledge.</p>
+        <a href="https://forms.gle/nScykXv9BJBYa2y47" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<div id="print-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('print-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="print.png">
+        <h2 style="color: #00f2fe;">Print-A-Thon</h2>
+        <p>Experience the future of additive manufacturing in this rapid prototyping competition.</p>
+        <a href="https://forms.gle/9ysoxqiRtbDcokCr7" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<div id="project-details" class="event-overlay">
+    <button class="back-btn" onclick="closeEvent('project-details')">← BACK</button>
+    <div class="overlay-content">
+        <img src="project.png">
+        <h2 style="color: #00f2fe;">Project Expo</h2>
+        <p>Unleash the engineer within! The SANKALP 2K26 Project Expo is a premier platform for aspiring innovators to demonstrate their technical prowess.</p>
+        <a href="https://forms.gle/G5SKoHFA63HK1fMg8" class="register-btn" target="_blank">Register Now</a>
+    </div>
+</div>
+
+<script>
+    function openEvent(id) {
+        document.getElementById(id).style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Stop page scroll
+    }
+    function closeEvent(id) {
+        document.getElementById(id).style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable page scroll
+    }
+</script>
+
+</body>
+</html>
