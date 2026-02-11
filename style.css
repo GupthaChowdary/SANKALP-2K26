@@ -35,27 +35,27 @@ header {
 .top-left-logo { width: 45px; height: auto; margin-bottom: 5px; }
 
 .college-name {
-    font-size: 1.2rem; /* Increased from 1rem */
+    font-size: 1rem;
     font-weight: 900;
-    color: #ffff00; 
+    color: #ffff00; /* Yellow */
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
 }
 
 .autonomous-text { 
-    font-size: 1.1rem; /* Increased from 1rem */
+    font-size: 1rem; /* Increased size to match college name */
     color: #ff00ff; 
     letter-spacing: 2px; 
     font-weight: bold; 
 }
 
 .address-text { 
-    font-size: 1.1rem; /* Increased from 1rem */
+    font-size: 1rem; /* Increased size to match college name */
     color: #ccc; 
 }
 
 nav { margin-top: 10px; }
-nav a { color: white; text-decoration: none; margin: 0 8px; font-weight: bold; font-size: 1rem; } /* Increased from 0.85 */
+nav a { color: white; text-decoration: none; margin: 0 8px; font-weight: bold; font-size: 0.85rem; }
 
 /* --- UNIFIED FULL SCREEN WRAPPER --- */
 .full-screen-wrapper {
@@ -69,30 +69,12 @@ nav a { color: white; text-decoration: none; margin: 0 8px; font-weight: bold; f
 }
 
 /* --- TEXT & ANIMATIONS --- */
-.dept-label { 
-    color: #00f2fe; 
-    letter-spacing: 5px; 
-    font-size: 1.1rem; /* Increased from 0.9rem */
-    font-weight: 700; 
-    margin: 0; 
-}
-
-.dept-name { 
-    color: #ff0000; 
-    font-size: 2.5rem; /* Increased slightly from 2.2rem */
-    font-weight: 900; 
-    margin: 5px 0 20px 0; 
-} 
-
-.ripple-text { 
-    letter-spacing: 12px; 
-    color: #00ff00; 
-    font-size: 2rem; /* Increased from 1.8rem */
-    font-weight: 800; 
-}
+.dept-label { color: #00f2fe; letter-spacing: 5px; font-size: 0.9rem; font-weight: 700; margin: 0; }
+.dept-name { color: #ff0000; font-size: 1.4rem; font-weight: 900; margin: 5px 0 20px 0; }
+.ripple-text { letter-spacing: 12px; color: #00ff00; font-size: 1.8rem; font-weight: 800; }
 
 .event-title {
-    font-size: clamp(2.5rem, 12vw, 5.5rem); /* Increased scale */
+    font-size: clamp(2.2rem, 10vw, 5rem);
     font-weight: 900;
     background: linear-gradient(90deg, #00f2fe, #ff00ff, #00ff00, #00f2fe);
     background-size: 300%;
@@ -104,22 +86,20 @@ nav a { color: white; text-decoration: none; margin: 0 8px; font-weight: bold; f
 
 @keyframes rgb-flow { 0% { background-position: 0%; } 100% { background-position: 100%; } }
 
-.symposium-subtext { 
-    font-size: 1rem; /* Increased from 0.85rem */
-    color: #00f2fe; 
-    font-weight: 700; 
-    letter-spacing: 2px; 
-}
-
-.event-date { 
-    color: #ff00ff; 
-    font-weight: 900; 
-    margin-top: 20px; 
-    font-size: 1.5rem; /* Increased from 1.3rem */
-}
+.symposium-subtext { font-size: 0.85rem; color: #00f2fe; font-weight: 700; letter-spacing: 2px; }
+.event-date { color: #ff00ff; font-weight: 900; margin-top: 20px; font-size: 1.3rem; }
 
 /* --- EVENTS GRID (Images Only) --- */
 .events-content { width: 100%; max-height: 70vh; overflow-y: auto; padding: 10px; }
+
+.banner-glass {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 242, 254, 0.2);
+    backdrop-filter: blur(5px);
+}
 
 .events-grid {
     display: grid;
@@ -146,27 +126,46 @@ nav a { color: white; text-decoration: none; margin: 0 8px; font-weight: bold; f
 /* --- CTA BUTTON --- */
 .explore-btn {
     margin-top: 20px;
-    padding: 15px 40px; /* Slightly larger padding */
+    padding: 12px 35px;
     color: #fff;
     text-decoration: none;
     border: 2px solid #00f2fe;
     border-radius: 50px;
     font-weight: bold;
-    font-size: 1.1rem; /* Added size increase */
     background: rgba(0, 242, 254, 0.1);
 }
 
-/* --- FOOTER --- */
-footer { 
-    padding: 15px 0; 
-    background: rgba(0,0,0,0.8); 
-    font-size: 0.85rem; /* Increased from 0.7rem */
+/* --- OVERLAY STYLES --- */
+.event-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95); z-index: 9999; display: none;
+    flex-direction: column; align-items: center; justify-content: center;
+    backdrop-filter: blur(10px);
 }
+
+.overlay-content { max-width: 500px; padding: 20px; text-align: center; }
+.overlay-content img { width: 100%; max-width: 300px; border-radius: 15px; border: 2px solid #00f2fe; margin-bottom: 15px; }
+.overlay-content h2 { font-size: 1.8rem; margin-bottom: 10px; }
+.overlay-content p { font-size: 1rem; color: #ddd; line-height: 1.5; }
+
+.back-btn {
+    position: absolute; top: 30px; left: 20px;
+    background: transparent; color: #ff00ff; border: 2px solid #ff00ff;
+    padding: 8px 16px; cursor: pointer; border-radius: 5px; font-weight: bold;
+}
+
+.register-btn {
+    display: inline-block; margin-top: 20px; padding: 12px 30px;
+    background: #ff00ff; color: white; text-decoration: none;
+    font-weight: bold; border-radius: 50px; text-transform: uppercase;
+}
+
+/* --- FOOTER --- */
+footer { padding: 15px 0; background: rgba(0,0,0,0.8); font-size: 0.7rem; }
 
 /* --- DESKTOP --- */
 @media (min-width: 1024px) {
     .top-left-logo { position: absolute; left: 30px; width: 70px; }
-    .college-name { font-size: 1.8rem; }
-    .autonomous-text, .address-text { font-size: 1.4rem; }
+    .college-name { font-size: 1.6rem; }
     .events-grid { grid-template-columns: repeat(4, 1fr); gap: 25px; }
 }
