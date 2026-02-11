@@ -42,17 +42,8 @@ header {
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
 }
 
-.autonomous-text { 
-    font-size: 1rem; /* Increased size to match college name */
-    color: #ff00ff; 
-    letter-spacing: 2px; 
-    font-weight: bold; 
-}
-
-.address-text { 
-    font-size: 1rem; /* Increased size to match college name */
-    color: #ccc; 
-}
+.autonomous-text { font-size: 1rem; color: #ff00ff; letter-spacing: 2px; font-weight: bold; }
+.address-text { font-size: 1rem; color: #ccc; }
 
 nav { margin-top: 10px; }
 nav a { color: white; text-decoration: none; margin: 0 8px; font-weight: bold; font-size: 0.85rem; }
@@ -70,7 +61,15 @@ nav a { color: white; text-decoration: none; margin: 0 8px; font-weight: bold; f
 
 /* --- TEXT & ANIMATIONS --- */
 .dept-label { color: #00f2fe; letter-spacing: 5px; font-size: 0.9rem; font-weight: 700; margin: 0; }
-.dept-name { color: #ff0000; font-size: 1.4rem; font-weight: 900; margin: 5px 0 20px 0; }
+
+/* INCREASED SIZE HERE */
+.dept-name { 
+    color: #ff0000; 
+    font-size: 2.2rem; /* Increased from 1.4rem */
+    font-weight: 900; 
+    margin: 5px 0 20px 0; 
+} 
+
 .ripple-text { letter-spacing: 12px; color: #00ff00; font-size: 1.8rem; font-weight: 800; }
 
 .event-title {
